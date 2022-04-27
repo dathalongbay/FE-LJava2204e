@@ -20,6 +20,11 @@
 
 
         thẻ input type="radio" có thuộc tính chọn trước 1 trong các option radio là thuộc tính checked
+
+        thẻ select chứa các thẻ option 
+        thẻ option có thuộc tính là value
+        nếu muốn chọn trước 1 option làm mặc định thì như thế nào 
+        mặc định thì trình duyệt sẽ chọn option đầu tiên trong select làm mặc định . dùng thuộc tính selected trong option
     </pre>
 
     <h1>Thông tin sinh viên</h1>
@@ -47,6 +52,34 @@
             <label for="">Giới tính</label>
             <input type="radio" name="gioitinh" value="1"> nam
             <input type="radio" name="gioitinh" value="0" checked> nữ
+        </div>
+
+        <div>
+            <label for="">Ngày sinh</label>
+            <select name="ngaysinh">
+                <option value="1">ngày 1</option>
+                <option value="2">ngày 2</option>
+                <option value="3">ngày 3</option>
+                <option value="10" selected>ngày 10</option>
+                <option value=20">ngày 20</option>
+                <option value=31">ngày 31</option>
+            </select>
+
+            <label for="">Tháng sinh</label>
+            <select name="thang">
+                <option value="1">Tháng 1</option>
+                <option value="2">Tháng 2</option>
+                <option value="3">Tháng 3</option>
+                <option value="12" selected>Tháng 12</option>
+            </select>
+
+            <label for="">Năm sinh</label>
+
+            <select name="nam">
+                <option value="1950">Năm 1950</option>
+                <option value="1951" selected>Năm 1951</option>
+                <option value="2022">Năm 2022</option>
+            </select>
         </div>
     </form>
 

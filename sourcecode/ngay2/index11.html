@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        #demo1 {
+            width: 600px;
+            height: 600px;
+            border: 3px solid red;
+            background-image: url("hostimages/iphone_13-_pro-5_4.webp");
+            color: orange;
+            background-repeat: repeat;
+        }
+
+        #demo2 {
+            width: 600px;
+            height: 600px;
+            border: 3px solid red;
+            background-image: url("hostimages/iphone_13-_pro-5_4.webp");
+            color: orange;
+            background-repeat: no-repeat; /* không lặp ảnh nền */
+        }
+
+        #demo3 {
+            width: 600px;
+            height: 600px;
+            border: 3px solid red;
+            background-image: url("hostimages/iphone_13-_pro-5_4.webp");
+            color: orange;
+            background-repeat: repeat-x; /* chỉ lắp theo chiều ngang */
+        }
+
+        #demo4 {
+            width: 600px;
+            height: 600px;
+            border: 3px solid red;
+            background-image: url("hostimages/iphone_13-_pro-5_4.webp");
+            color: orange;
+            background-repeat: repeat-y; /* chỉ lắp theo chiều dọc */
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        background-repeat ( lặp ảnh nền )
+        thuộc tính này chỉ có tác dụng khi mà kích cỡ của thẻ lớn hơn ảnh nền 
+        căn phòng 20 mét vuông lát gạch ( 50*50) 
+    </pre>
+
+    <h1>repeat</h1>
+    <div id="demo1">
+        thực hành background-repeat
+    </div>
+
+    <h1>no-repeat</h1>
+
+    <div id="demo2">
+        thực hành background-repeat
+    </div>
+
+    <h1>repeat-x</h1>
+
+    <div id="demo3">
+        thực hành background-repeat
+    </div>
+
+
+    <h1>repeat-y</h1>
+
+    <div id="demo4">
+        thực hành background-repeat
+    </div>
+</body>
+</html>

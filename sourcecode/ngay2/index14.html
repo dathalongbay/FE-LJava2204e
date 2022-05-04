@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo1 {
+            background-color: violet;
+            background-image: url("hostimages/iphone_13-_pro-5_4.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 400px;
+            height: 300px;
+            border: 1px solid olive;
+        }
+
+        #demo2 {
+            background: violet  url("hostimages/iphone_13-_pro-5_4.jpg")  no-repeat  center center;
+            width: 400px;
+            height: 300px;
+            border: 1px solid olive;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        quy tắc viết rút gọn của background 
+        background: A B C D E;
+        A là giá trị background-color
+        B là giá trị background-image
+        C là giá trị background-repeat
+        D là giá trị background-attachment
+        E là giá trị background-position
+    </pre>
+
+    <h1>không viết rút gọn </h1>
+    <div id="demo1">demo 1</div>
+    <h1>có viết rút gọn </h1>
+    <div id="demo2">demo 2</div>
+</body>
+</html>

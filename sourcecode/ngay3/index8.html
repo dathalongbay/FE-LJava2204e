@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo {
+            background-color: orange;
+            border: 1px solid red;
+            display: inline-block;
+            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        #demo1 {
+            overflow: visible;
+        }
+
+        #demo2 {
+            overflow: hidden;
+        }
+
+        #demo3 {
+            overflow: scroll;
+        }
+
+        #demo4 {
+            overflow: auto;
+        }
+
+        #demo5 {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thuộc tính css overflow ( khi tràn nội dung thì sẽ xử lý ra sao ?)
+        overflow: visible; ( hiển thị phần tràn)
+        overflow: hidden; ( ẩn phần tràn )
+        overflow: scroll; ( hiển thanh cuộn chuột trong cả 2 trường hợp nội dung tràn hay không tràn)
+        overflow: auto; ( hiển thị thanh cuộn chuột khi nội dung tràn và không hiện thanh cuộn chuột nếu nội dung không tràn) 
+
+        overflow-x ( xử lý tràn theo chiều ngang )
+        overflow-y ( xử lý tràn theo chiều dọc )
+        overflow ( xử lý tràn theo cả 2 hướng dọc và ngang )
+    </pre>
+
+    <div id="demo1" class="demo">
+        <h2>visible</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure accusantium, inventore, nobis laboriosam eligendi voluptatibus sunt laudantium pariatur porro temporibus soluta consectetur quibusdam earum eius voluptate impedit doloribus odio!</p>
+    </div>
+    <div id="demo2" class="demo">
+        <h2>hidden</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure accusantium, inventore, nobis laboriosam eligendi voluptatibus sunt laudantium pariatur porro temporibus soluta consectetur quibusdam earum eius voluptate impedit doloribus odio!</p>
+    </div>
+    <div id="demo3" class="demo">
+        <h2>scroll</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure accusantium, inventore, nobis laboriosam eligendi voluptatibus sunt laudantium pariatur porro temporibus soluta consectetur quibusdam earum eius voluptate impedit doloribus odio!</p>
+    </div>
+    <div id="demo4" class="demo">
+        <h2>auto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure accusantium, inventore, nobis laboriosam eligendi voluptatibus sunt laudantium pariatur porro temporibus soluta consectetur quibusdam earum eius voluptate impedit doloribus odio!</p>
+    </div>
+
+    <div id="demo5" class="demo">
+        <h2>auto</h2>
+        <p>Lorem ipsum</p>
+    </div>
+
+    
+</body>
+</html>

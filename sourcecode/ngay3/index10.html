@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    * {
+        padding: 0;
+        margin: 0;
+    } 
+
+    #demo1 {
+        border: 1px solid red;
+        background-color: antiquewhite;
+        width: 400px;
+    }
+
+    #demo2 {
+        border: 1px solid red;
+        background-color: antiquewhite;
+        width: 400px;
+    }
+
+    #demo1 img {
+        float: left;
+    }
+    #demo2 img {
+        float: right;
+    }
+
+    #demo2 p {
+        clear: both;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <h1>thuộc tính clear</h1>
+    <pre>
+        khi 2 thẻ html A và B nằm cạnh nhau 
+        nếu chúng ta cho thẻ A float sang trái hay sang phải 
+        thì thẻ B sẽ bị thẻ A ảnh hướng và kéo lên trên sang bên trái hay bên phải 
+
+        nếu muốn thẻ B không bị ảnh hưởng bởi thẻ A khi thẻ float 
+        thì làm thể nào ?
+        nếu A mà float:left; thì B dùng clear: left;
+        nếu A mà float: right thì B dùng clear: right;
+        nếu A không rõ float trái hay phải cho B clear: both; 
+    </pre>
+    <div id="demo1">
+        <img src="book.png" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium vero sunt perferendis facere commodi culpa rerum voluptates, debitis reprehenderit totam est cum unde eligendi quam. Neque aut debitis quasi.</p>
+    </div>
+
+    <p style="clear: both;"></p>
+
+    <div id="demo2">
+        <img src="book.png" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium vero sunt perferendis facere commodi culpa rerum voluptates, debitis reprehenderit totam est cum unde eligendi quam. Neque aut debitis quasi.</p>
+    </div>
+</body>
+</html>

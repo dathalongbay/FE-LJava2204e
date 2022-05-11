@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #demo1 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: block;
+        }
+
+        #demo2 {
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: inline;
+        }
+
+        .g1 {
+            background-color: antiquewhite;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 1px solid red;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        nếu dùng display:inline thì việc set width và height mất tác dụng 
+        hay nói cách khác ko thể set width và height cho 1 thẻ có display là inline 
+        => display: inline-block; 
+        áp dụng cho trường hợp khi muốn đặt width và height cho 1 thẻ mà vẫn muốn giữ đặc tính trên cùng 1 hàng của inline 
+
+    </pre>
+
+    <div id="demo1">demo 1</div>
+    <div id="demo2">demo 2</div>
+
+    <div style="margin: 30px">thẻ div ngăn cách</div>
+
+    <div class="g1">g1</div>
+    <div class="g1">g2</div>
+    <div class="g1">g3</div>
+</body>
+</html>

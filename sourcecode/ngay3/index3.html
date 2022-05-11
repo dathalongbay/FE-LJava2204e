@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #demo1 {
+            background-color: olive;
+            margin: 30px;
+        }
+
+        #demo2 {
+            background-color: orange;
+            margin: 30px 20px 10px 15px;
+        }
+
+        #demo3 {
+            background-color: gray;
+            margin: 30px 20px;
+        }
+
+        #demo4 {
+            background-color: bisque;
+            margin: 30px 20px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <pre>
+        Các qui tắc viết rút gọn của margin 
+        margin có 4 hướng trên dưới trái phải 
+        tương ứng với margin-top , margin-bottom , margin-left và margin-right 
+        
+        * TH1 : margin theo 4 hướng đều = nhau 
+        thì viết là margin: A; trong đó A là giá trị margin của 4 hướng 
+        * TH2 : margin 4 hướng khác nhau hoàn toàn 
+        dùng quy tắc kim đồng hồ : 12 -> 3h -> 6h -> 9h
+        margin: A B C D;
+        trong đó A là giá trị margin top
+        trong đó B là giá trị margin right
+        trong đó C là giá trị margin bottom
+        trong đó D là giá trị margin left
+        vd => margin: 10px 20px 15px 8px;
+        * TH3 : margin top bằng margin bottom và 
+        margin left bằng margin right nhưng margin top khác margin left 
+        margin: A B;
+        trong đó A đồng thời là giá trị margin top và margin bottom 
+        B đồng thời giá trị margin left và margin right 
+        vd 
+        margin: 20px 30px;
+        hiểu là margin top và margin bottom là 20px 
+        margin left và margin right là 30px 
+        * TH4 : margin top khác margin bottom và 
+        margin left bằng margin right 
+        cú pháp 
+        margin: A B C;
+        A là giá trị margin top 
+        B đồng thời là giá trị margin left và right 
+        C là giá trị margin bottom 
+        vi dụ 
+        margin : 20px 30px  15px;
+        margin top là 20px 
+        margin left = margin right và = 30px 
+        margin bottom = 15 
+    </pre>
+
+    <div id="demo1">demo 1</div>
+    <div id="demo2">dem0 2 </div>
+    <div id="demo3">dem0 3</div>
+    <div id="demo4">dem0 4</div>
+
+</body>
+</html>

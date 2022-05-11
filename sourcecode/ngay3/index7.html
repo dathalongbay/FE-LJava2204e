@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo {
+            background-color: green;
+        }
+
+        .sp1 {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        tìm hiểu về thuộc tính css display 
+        display: block;
+        display: inline; 
+        display: none; 
+        display: inline-block;
+        display: flex;
+
+        => mặc định các thẻ html chia thành 2 nhóm block và inline 
+        đại điện cho nhóm block và div 
+        đại điện cho nhóm inline là span 
+        thẻ span là 1 thẻ nhóm các nội dung inline 
+
+        *** 
+        block có 2 đặc điểm : chiếm 100% độ rộng của thẻ cha (nếu đó là thẻ nằm trong thẻ body thì độ rộng của thẻ đó là 100% của màn hình)
+        đặc điểm thứ 2 của block đó là thẻ block luôn xuất hiện trên 1 hàng mới 
+        ***
+
+        ***
+        còn inline với đại diện là span thì có 2 đặc điểm 
+        1 là chiếm độ rộng tương ứng với nội dung bên trong thẻ 
+        2 là các thẻ sẽ nằm trên cùng 1 hàng ngang nếu màn hình vẫn còn khoảng trống 
+        ***
+
+        ***
+        nhóm block gồm thẻ nào ?
+        https://www.w3schools.com/html/html_blocks.asp
+        nhóm inline gốm thẻ nào ?
+        https://www.w3schools.com/html/html_blocks.asp
+        ***
+
+    </pre>
+
+    <div class="demo">Demo block 1</div>
+    <div class="demo">Demo block 2</div>
+    <div class="demo">Demo block 3</div>
+    
+
+    <span class="sp1">Thẻ span 1</span>
+    <span class="sp1">Thẻ span 2</span>
+    <span class="sp1">Thẻ span 3</span>
+    <span class="sp1">Thẻ span 4</span>
+
+    <div class="demo">.</div>
+
+
+</body>
+</html>

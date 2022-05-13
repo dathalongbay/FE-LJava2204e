@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #main-nav {
+            background-color: aqua;
+        }
+
+        #main-nav a {
+            /* chọn tất cả các thẻ a nằm trong #main-nav */
+            text-decoration: none;
+            color: white;
+            background-color: orange;
+            padding: 10px;
+            display: block;
+            width: 100px;
+        }
+
+        #main-nav li {
+            float: left;
+        }
+
+        #main-nav ul {
+         list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        clearfix 
+        * vấn đề : khi thẻ cha không có thuộc tính height và các thẻ con bị float sang 
+        trái hay sang phải thì thẻ con sẽ bị trượt thẻ cha và thẻ cha sẽ không chứa được thẻ con . nếu inspect thẻ cha thì thẻ cha có chiều cao là 0px 
+        * để giải quyết vấn đề này có 3 cách nhưng cách phổ biến nhất là dùng 
+        kỹ thuật clearfix
+    </pre>
+
+    <nav id="main-nav" class="clearfix">
+        <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Sản phẩm</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Đối tác</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

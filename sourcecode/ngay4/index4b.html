@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demoA {
+            background-color: olive;
+            width: 140px;
+            height: 140px;
+            color: white;
+        }
+
+        .demoA .demoB {
+            background-color: orange;
+            width: 60px;
+            height: 60px;
+            color: white;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .demoC {
+            background-color: violet;
+            width: 240px;
+            height: 240px;
+            color: white;
+            position: relative;
+        }
+
+        .demoC .demoD {
+            background-color: green;
+            width: 60px;
+            height: 60px;
+            color: white;
+
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        2 trường hợp khác nhau của absolute 
+        1 - trường hợp 1 thẻ con absolute nằm trực tiếp trong thẻ body hoặc các thẻ cha của nó có position là static thì thẻ con sẽ lấy cửa sổ trình duyệt làm tọa độ để đặt vị trí 
+        2 - thẻ con absolute có thẻ cha hay thẻ ông nội ... tóm lại là các thẻ cấp trên của thẻ con này mà position của thẻ cha lại là relative thì thẻ con sẽ lấy tọa độ của thẻ cha làm gốc tọa độ để dịch chuyển và đặt vị trí 
+    </pre>
+
+    <div class="demoA">
+        <div class="demoB">.demoB trong .demoA</div>
+        .demoA
+    </div>
+
+    <div class="demoC">
+        <div class="demoD">.demoD trong .demoC</div>
+        .demoC
+    </div>
+
+</body>
+</html>

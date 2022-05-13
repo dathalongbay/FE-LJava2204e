@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demoA {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            color: white;
+
+            position: static;
+        }
+
+        .demoB {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            color: white;
+
+            position: absolute;
+            top: 20px;
+            left: 100px;
+        }
+
+        .demoC {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+
+            position: absolute;
+            top: 20px;
+            right: 10px;
+        }
+
+        .demoD {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            color: white;
+
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+        }
+
+        .demoE {
+            width: 100px;
+            height: 100px;
+            background-color: lawngreen;
+            color: white;
+
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>thuộc tính css position ( vị trí )</h1>
+    <pre>
+        mặc định các thẻ html có position là static ( nghĩa là tĩnh )
+        khi ta thay đổi giá trị cho thuộc tính position thì tính chất của 
+        thẻ đó sẽ bị thay đổi 
+        1 - position: static; ( mặc định là tĩnh )
+        2 - position: relative; ( là tương đối )
+        3 - position: absolute; ( là tuyệt đối )
+        4 - position: fixed; ( cố định )
+        5 - position: sticky; ( kết hợp fixed và relative )
+
+        dùng 1 số thuộc tính tọa độ trong css như top, left, right, bottom 
+    </pre>
+
+    <div class="demoA">.demoA static</div>
+    <div class="demoB">.demoB absolute</div>
+    <div class="demoC">.demoC absolute</div>
+    <div class="demoD">.demoD absolute</div>
+    <div class="demoE">.demoE absolute</div>
+
+
+
+</body>
+</html>

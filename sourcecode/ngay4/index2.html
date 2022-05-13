@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .classA.classB {
+            color: red;
+        }
+
+        #idA.classB {
+            color: olive;
+        }
+
+        p.classA {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>css selector mở rộng</h1>
+    <pre>
+        1 - #id chọn theo id của thẻ html 
+        2 - .className chọn theo class của thẻ html 
+        3 - tagName chọn theo tên thẻ của thẻ html vi dụ : h1 {color:red} hoặc 
+        p {
+            color: green;
+        }
+        4 - * ( chọn tất cả các thẻ ) ví dụ * { margin : 0; padding: 0} dùng 
+        reset css 
+        5 - selectorCha selectorCon 
+        ví dụ : 
+            div p { color: red; } chọn tất cả các thẻ p phải nằm trong thẻ div 
+            .classA .classB { color: red; } chọn tất cả các classB phải nằm trong classA 
+            #idA #idB { color: red } chọn thẻ có id là idA trong thẻ có id là idB 
+            div .classB { color: red } chọn thẻ classB nằm trong thẻ div 
+            #idA .classB { color: red} chọn thẻ classB trong idA 
+            .classA #idB { color: red }
+        6 - thẻ có đồng thời 2 class 
+        ví dụ : .classA.classB { color: red} chọn tất cả thẻ có đồng thời classA và classB
+    </pre>
+
+
+    <div class="classA">div.classA</div>
+    <p class="classA">p.classA</p>
+    <div class="classB">.classB</div>
+    <div class="classA classB">.classB.classB</div>
+    <div id="idA" class="classB">#idA.classB</div>
+    
+</body>
+</html>

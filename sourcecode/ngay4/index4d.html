@@ -5,18 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0; 
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        nav {
+            background-color: rosybrown;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul.listLevel1 > li{
+            float: left;
+
+        }
+
+        ul.listLevel1 > li > a{
+            color: white;
+            text-decoration: none;
+            background-color: orange;
+            display: block;
+            padding: 5px 10px;
+        }
+
+        ul.listLevel1 ul {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <h1>menu đa cấp</h1>
 
+    <pre>
+        .classA .classB => chọn tất cả thẻ classB trong classA 
+        .classA > .classB => chọn tất cả các thẻ classB nằm trực tiếp trong classA 
+    </pre>
+
     <nav>
-        <ul>
+        <ul class="listLevel1 clearfix">
             <li>
                 <a href="">Điện thoại</a>
-                <ul>
+                <ul class="listLevel2">
                     <li>
                         <a href="">apple</a>
-                        <ul>
+                        <ul class="listLevelN">
                             <li><a href="">iphone 11</a></li>
                             <li><a href="">iphone 12</a></li>
                             <li><a href="">iphone 13</a></li>
@@ -28,10 +71,10 @@
             </li>
             <li>
                 <a href="">Laptop</a>
-                <ul>
+                <ul class="listLevel2">
                     <li>
                         <a href="">Mac</a>
-                        <ul>
+                        <ul class="listLevelN">
                             <li><a href="">Macbook air</a></li>
                             <li><a href="">Macbook pro</a></li>
                             <li><a href="">Macbook mini</a></li>

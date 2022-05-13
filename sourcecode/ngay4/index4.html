@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demoA {
+            background-color: green;
+            color: white;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            top: 100px;
+
+        }
+
+        .demoB {
+            background-color: orange;
+            color: white;
+            width: 100px;
+            height: 100px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        có absolute lấy cửa sổ trình duyệt làm tọa độ để di chuyển và đặt vị trí theo top left bottom hay right 
+        còn relative dùng vị trí ban đầu của thẻ để làm gốc tọa độ 
+    </pre>
+
+    <div class="demoA">demo absolute</div>
+    <div class="demoB" id="target1">demo relative</div>
+
+    <button id="controlA">thay đổi về static</button>
+    <button id="controlB">thay đổi về relative</button>
+
+    <script>
+        document.getElementById("controlA").onclick = function() {
+            document.getElementById("target1").style.position = "static";
+        }
+
+        document.getElementById("controlB").onclick = function() {
+            document.getElementById("target1").style.position = "relative";
+            document.getElementById("target1").style.top = "20px";
+            document.getElementById("target1").style.left = "40px";
+
+        }
+
+    </script>
+</body>
+</html>

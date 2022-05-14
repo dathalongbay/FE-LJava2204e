@@ -14,7 +14,7 @@
 </html>
 ```
 # dòng số 1 
-<!DOCTYPE html> khai báo kiểu doctype của html 5 
+```<!DOCTYPE html>``` khai báo kiểu doctype của html 5 
 # dòng số 2 có thẻ html 
 thẻ html có chứa tất cả các thẻ html khác   
 cú pháp của html có thẻ mở và thẻ đóng 

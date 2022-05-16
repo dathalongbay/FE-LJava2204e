@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .demoA .demoB {
+            background-color: aqua;
+        }
+        .demoA > .demoB {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        bộ chọn con trực tiếp 
+        .classA .classB => chọn classB trong classA 
+        .classA > .classB => chọn con trực tiếp có nghĩa là classB phải là thẻ con trực tiếp classA 
+    </pre>
+
+    <div class="demoA">
+        <div class="demoB">demoB là con trực tiếp</div>
+
+        <div class="child">
+            <div class="demoB">demoB không phải là con trực tiếp</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+        }
+
+        .parent .child {
+            background-color: green;
+            width: 50%;
+            height: 40%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        đơn vị % 
+        https://www.w3schools.com/cssref/css_pxtoemconversion.asp
+        1 - với font-size 
+        100% = 16px 
+        2 - với width , height ... sẽ phụ thuộc tương ứng vào thẻ cha 
+        khi sử dụng %
+    </pre>
+
+    <p style="font-size: 100%;">demo thẻ p 100%</p>
+    <p style="font-size: 200%;">demo thẻ p 200%</p>
+
+    <div class="parent">
+        <div class="child">thẻ con</div>
+    </div>
+
+
+</body>
+</html>

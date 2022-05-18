@@ -5,11 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .demo1,.demo2 {
+            background-color: antiquewhite;
+            color: aqua;
+        }
+
+        .demo1 {
+            font-size: 14px;
+        }
+        .demo2 {
+            font-size: 16px;
+        }
+
+        /* selector theo attr thuộc tính */
+        a[target=_blank] {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <pre>
         Ôn tập selector bộ chọn trong css 
         https://www.w3schools.com/cssref/css_selectors.asp
+        về nhà xem thêm 
     </pre>
+
+    <div class="demo1">demo1</div>
+
+    <p class="demo2">demo2</p>
+
+
+    <a href="" target="_blank">thẻ a1 _blank mở link trong tab mới</a>
+    <a href="" target="_self">thẻ a2 _self mở tab hiện tại</a>
+    <a href="" target="_blank">thẻ a3 _blank mở link trong tab mới</a>
+
 </body>
 </html>

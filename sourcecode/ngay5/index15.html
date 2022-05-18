@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .demo1 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .demo2 {
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+            border: 2px solid red;
+            padding: 10px;
+        }
+
+        .demo3 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border: 2px solid red;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        box-sizing
+        khi chúng ta thêm padding và border vào 1 thẻ 
+        có width và height thì width và height sẽ bị tăng lên 
+        thay đổi 
+
+        => khi người ta không muôn padding và border khi thêm vào 
+        làm thay đổi kích thước của thẻ thì người ta sẽ dùng box-sizing: border-box; và nó sẽ bóp nội dung bên trong để giữ được kích thước ban đầu
+    </pre>
+
+    <div class="demo1">demo 1</div>
+    <div class="demo2">demo 2</div>
+    <div class="demo3">demo 3</div>
+</body>
+</html>

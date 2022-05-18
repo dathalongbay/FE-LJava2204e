@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .demo1 {
+            font-size: 2em;
+        }
+
+        .parent {
+            font-size: 25px;
+        }
+
+        .parent .child {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        đơn vị trong css 
+        - đơn vị tuyệt đối (px điểm ảnh)
+        - đơn vị tương đối 
+        đơn vị áp dụng nhiều thuộc tính 
+        margin: 30px
+        padding: 20px 
+        font-size: 16px 
+        width:200px ... 
+    </pre>
+
+    <h2>đơn vị tương đối</h2>
+    <pre>
+        đơn vị em khi mà thẻ cha có font-size 
+        thì 1em = font-size của thẻ cha 
+        nhưng chú ý nếu thẻ cha không có font-size 
+        thì em sẽ tìm đến thẻ ông nội -> cụ nội ( tổ tiên) 
+        để xem thẻ tổ tiên nào có font-size để quy thành em 
+        
+    </pre>
+
+    <pre>
+        https://www.w3schools.com/css/css_units.asp 
+        đơn vị em 
+        Relative to the font-size of the element (2em means 2 times the size of the current font) 
+        áp dụng font-size 
+        mặc định 1em = 16px
+    </pre>
+
+    <p class="demo1">demo em mặc định</p>
+
+    <div class="parent">
+        <div class="child">demo em không mặc định phụ thuộc vào thẻ cha</div>
+    </div>
+
+
+
+</body>
+</html>

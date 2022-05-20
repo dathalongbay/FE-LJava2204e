@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* reset css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* clearfix */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #wrap .header{
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+            /* căn chữ vào giữa */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* phần nav */
+        #wrap .nav {
+            height: 50px;
+            background-color: aqua;
+        }
+
+        .nav ul {
+            list-style: none;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            height: 50px;
+        }
+        /* phần content */
+
+        .content .sidebar-left {
+            width: 25%;
+            background-color: olivedrab;
+            float: left;
+            height: 500px;
+        }
+
+        .content .main-content {
+            float: left;
+            background-color: olive;
+            color: white;
+            width: 50%;
+            height: 500px;
+        }
+
+        .content .sidebar-right {
+            float: right;
+            background-color: blanchedalmond;
+            width: 25%;
+            height: 500px;
+        }
+
+        /* footer */
+        #wrap .footer{
+            width: 100%;
+            height: 50px;
+            background-color: orange;
+            /* căn chữ vào giữa */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <header class="header">
+            <h1>Header</h1>
+            <p>dùng flex vừa học để tạo 1 layout giống hệt file 
+                nhưng không được float 
+            </p>
+        </header>
+
+        <nav class="nav">
+            <ul class="clearfix">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">...</a></li>
+            </ul>
+        </nav>
+
+        <div class="content clearfix">
+            <sidebar class="sidebar sidebar-left">
+                <h2>sidebar left</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium modi placeat illo doloribus. Itaque facilis vero cupiditate sed. Nam est quibusdam optio natus pariatur sequi incidunt facilis aut in libero.</p>
+            </sidebar>
+
+            <main class="main-content">
+                <h2>Main content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium modi placeat illo doloribus. Itaque facilis vero cupiditate sed. Nam est quibusdam optio natus pariatur sequi incidunt facilis aut in libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium modi placeat illo doloribus. Itaque facilis vero cupiditate sed. Nam est quibusdam optio natus pariatur sequi incidunt facilis aut in libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium modi placeat illo doloribus. Itaque facilis vero cupiditate sed. Nam est quibusdam optio natus pariatur sequi incidunt facilis aut in libero.</p>
+            </main>
+
+            <sidebar class="sidebar sidebar-right">
+                <h2>sidebar right</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium modi placeat illo doloribus. Itaque facilis vero cupiditate sed. Nam est quibusdam optio natus pariatur sequi incidunt facilis aut in libero.</p>
+            </sidebar>
+        </div> <!-- end .content -->
+
+        <footer class="footer">
+            <h4>Copyright 2022</h4>
+        </footer>
+
+    </div> <!-- end #wrap -->
+    
+</body>
+</html>

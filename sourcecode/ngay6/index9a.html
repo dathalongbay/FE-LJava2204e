@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: orange;
+            display: flex;
+        }
+
+        .parent .child {
+            padding: 20px;
+            background-color: olive;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        các thuộc tính của flex items con 
+        2 - flex-grow
+        The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
+        thuộc tính flex-grow xác định 1 flex item giãn ra tương đối với các flex item còn lại như thế nào 
+        giá trị mặc định của flex-grow là 0 
+    </pre>
+
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+
+    <h1>dùng flex-grow</h1>
+
+    <div class="parent">
+        <div class="child" style="flex-grow:1;">1</div>
+        <div class="child" style="flex-grow:3;">2</div>
+        <div class="child" style="flex-grow:1;">3</div>
+        <div class="child" style="flex-grow:1;">4</div>
+    </div>
+</body>
+</html>

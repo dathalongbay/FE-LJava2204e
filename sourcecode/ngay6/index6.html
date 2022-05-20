@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: orange;
+            /* khai báo flex container */
+            display: flex;
+           /*  flex-direction: row; */
+           flex-direction: row;
+           flex-wrap: wrap;
+           width: 100%; 
+           height: 500px;
+
+           align-content: flex-start;
+        }
+
+        .parent .child {
+            width: 100px;
+            background-color: green;
+            padding: 20px;
+            margin: 0 20px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+       
+        align-content : align the flex lines ( áp dụng cho trường hợp có nhiều hàng con bên trong )
+        áp dụng chiều dọc nhưng áp dụng cho trường hợp có nhiều dòng flex con 
+    </pre>
+
+    <div class="parent">
+        <div class="child">
+            <h1>div 1</h1>
+        </div>
+        <div class="child">
+            <h3>div 2</h3>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+        <div class="child">
+            <h6>div 6</h6>
+        </div>
+    </div> 
+
+   
+
+    <button id="control1">flex-start</button>
+    <button id="control2">flex-end</button>
+    <button id="control3">center</button>
+    <button id="control4">stretch</button>
+    <button id="control5">space-around</button>
+    <button id="control6">space-between</button>
+
+    <script>
+        document.getElementById("control1").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.alignContent = "flex-start";
+        }
+        document.getElementById("control2").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.alignContent = "flex-end";
+        }
+        document.getElementById("control3").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.alignContent = "center";
+        }
+        document.getElementById("control4").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.alignContent = "stretch";
+        }
+        document.getElementById("control5").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.alignContent = "space-around";
+        }
+        document.getElementById("control6").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.alignContent = "space-between";
+        }
+    </script>
+</body>
+</html>

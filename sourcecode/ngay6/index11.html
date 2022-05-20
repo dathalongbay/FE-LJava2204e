@@ -14,12 +14,7 @@
             box-sizing: border-box;
         }
 
-        /* clearfix */
-        .clearfix::after {
-            content: "";
-            display: block;
-            clear: both;
-        }
+    
 
         #wrap .header{
             width: 100%;
@@ -38,10 +33,11 @@
 
         .nav ul {
             list-style: none;
+            display: flex;
         }
 
         .nav li {
-            float: left;
+            
         }
 
         .nav li a {
@@ -52,26 +48,28 @@
         }
         /* phần content */
 
+        .content {
+            height: 500px;
+            display: flex;
+            align-items: stretch;
+        }
         .content .sidebar-left {
             width: 25%;
             background-color: olivedrab;
-            float: left;
-            
-        }
-
-        .content .main-content {
-            float: left;
-            background-color: olive;
-            color: white;
-            width: 50%;
            
         }
 
+        .content .main-content {
+           
+            background-color: olive;
+            color: white;
+            width: 50%;
+        }
+
         .content .sidebar-right {
-            float: right;
+          
             background-color: blanchedalmond;
             width: 25%;
-            
         }
 
         /* footer */
@@ -97,7 +95,7 @@
         </header>
 
         <nav class="nav">
-            <ul class="clearfix">
+            <ul class="">
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">Giới thiệu</a></li>
                 <li><a href="">Liên hệ</a></li>
@@ -105,7 +103,7 @@
             </ul>
         </nav>
 
-        <div class="content clearfix">
+        <div class="content ">
             <sidebar class="sidebar sidebar-left">
                 <h2>sidebar left</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium modi placeat illo doloribus. Itaque facilis vero cupiditate sed. Nam est quibusdam optio natus pariatur sequi incidunt facilis aut in libero.</p>

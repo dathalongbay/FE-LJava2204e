@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: orange;
+            /* khai báo flex container */
+            display: flex;
+           /*  flex-direction: row; */
+           flex-direction: row;
+        }
+
+        .parent .child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            padding: 20px;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Flex container
+        flex-wrap : quyết định xem flex container có bao bọc các 
+        flex items hay không
+        nowrap không bao bọc ( mặc định)
+        wrap có bao bọc 
+        wrap-reverse : bao bọc nhưng xếp ngược thứ tự 
+    </pre>
+
+    <div class="parent">
+        <div class="child">div 1</div>
+        <div class="child">div 2</div>
+        <div class="child">div 3</div>
+        <div class="child">div 4</div>
+        <div class="child">div 5</div>
+        <div class="child">div 6</div>
+        <div class="child">div 7</div>
+        <div class="child">div 8</div>
+        <div class="child">div 9</div>
+        <div class="child">div 10</div>
+    </div>
+
+    <button id="control1">flex-wrap: nowrap (mặc định)</button>
+    <button id="control2">flex-wrap: wrap</button>
+    <button id="control3">flex-wrap: wrap-reverse</button>
+
+    <script>
+        document.getElementById("control1").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.flexWrap = "nowrap";
+        }
+        document.getElementById("control2").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.flexWrap = "wrap";
+        }
+        document.getElementById("control3").onclick = function(){
+            document.getElementsByClassName("parent")[0].style.flexWrap = "wrap-reverse";
+        }
+      
+    </script>
+</body>
+</html>

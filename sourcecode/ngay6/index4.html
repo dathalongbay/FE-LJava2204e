@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: orange;
+            /* khai báo flex container */
+            display: flex;
+           
+          /*  flex-direction: column;
+           flex-wrap: wrap; */
+
+           flex-flow: column wrap;
+        }
+
+        .parent .child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            padding: 20px;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        flex-flow: A B;
+        trong đo A là giá trị flex-direction 
+        B là giá trị flex-wrap 
+        đơn giản chỉ là thuộc viết tắt 
+    </pre>
+
+    <div class="parent">
+        <div class="child">div 1</div>
+        <div class="child">div 2</div>
+        <div class="child">div 3</div>
+        <div class="child">div 4</div>
+        <div class="child">div 5</div>
+        <div class="child">div 6</div>
+        <div class="child">div 7</div>
+        <div class="child">div 8</div>
+        <div class="child">div 9</div>
+        <div class="child">div 10</div>
+    </div>
+</body>
+</html>

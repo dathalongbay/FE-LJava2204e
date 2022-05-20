@@ -1,0 +1,1 @@
+console.log("chào js từ file bên ngoài");

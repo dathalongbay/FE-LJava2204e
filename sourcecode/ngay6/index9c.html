@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: orange;
+            display: flex;
+            height: 300px;
+        }
+
+        .parent .child {
+            padding: 20px;
+            background-color: olive;
+            margin: 2px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        các thuộc tính của flex items con 
+        2 - flex-basis
+        dùng để xác định độ rộng ban đầu của 1 flex item 
+    </pre>
+
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+
+    <h1>dùng flex-basis</h1>
+
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child"style="flex-basis: 50%">4</div>
+    </div>
+</body>
+</html>

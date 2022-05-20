@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: orange;
+            /* khai báo flex container */
+            display: flex;
+        }
+
+        .parent .child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            padding: 20px;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        https://www.w3schools.com/css/css3_flexbox.asp
+        CSS Flexbox 
+        khái niệm 1 : flex container ( khung chứa bên ngoài chứa các flex item)
+        khái niệm 2 : flex item ( con của flex container )
+        với flex container có 1 khai báo 
+        display: flex;
+    </pre>
+
+    <h1>ví dụ 1 flex box</h1>
+
+
+    <div class="parent">
+        <div class="child">div 1</div>
+        <div class="child">div 2</div>
+        <div class="child">div 3</div>
+    </div>
+</body>
+</html>

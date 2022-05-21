@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .parent .child1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        absolute 
+        có 2 trường hợp 
+        TH 1 : thẻ absolute có các thẻ cha mà position là static 
+        TH 2 : thẻ absolute có thẻ cha mà position thẻ cha relative 
+    </pre>
+
+
+    <div class="parent">
+        <div class="child1">
+            thẻ div con
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #target1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        #target2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+        }
+        #target3 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 100px;
+            bottom: 100px;
+        }
+        #target4 {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        css position 
+        giá trị mặc định là static 
+        position: static; ( mặc định )
+        position: asbolute;
+        position: relative;
+        position: fixed;
+        position: sticky;
+
+        dùng top | left | bottom | right kết hợp với position để đặt vị trí cho thẻ html 
+
+        ** chú ý dùng top left bottom right có tác dụng khi position khác static 
+
+    </pre>
+
+    <div class="parent">
+        <div id="target1">
+            div 1
+        </div>
+        <div id="target2">
+            div 2
+        </div>
+    
+        <div id="target3">
+            div 3
+        </div>
+    
+        <div id="target4">
+            div 4
+        </div>
+    </div>
+
+  
+</body>
+</html>

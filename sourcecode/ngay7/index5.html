@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tính điểm trung bình</h1>
+
+    <script>
+        var name = "nguyen van an";
+        var toan = 9;
+        var van = 5;
+        var anh = 6;
+        // điểm trung bình (ngoại ngữ hệ số 2)
+        var diemTrungBinh = (toan + van + anh*2)/4;
+        document.write("sinh viên " + name + " điểm TB " + diemTrungBinh)
+
+        // cần tính điểm của nhiều sinh viên phải liên tục lặp lại đoạn code tương tự nhau => tạo ra function tái sử dụng nhiều lần 
+
+        // khai báo hàm function tenHam(param1, param2) { code của hàm }
+        // nếu 1 hàm cần trả về giá trị dùng từ khóa return cuối hàm
+        // return a;
+
+        // gán giá trị mặc định cho tham số khi khai báo function 
+        // hoặc không gán giá trị mặc định
+        function tinhDiemTrungBinh(t = 1,v = 1,a) {
+            // nội dung của hàm 
+            diemtb = (t + v + (a*2))/4;
+            // cuối hàm nếu cần trả về dùng return 
+            return diemtb;
+        }
+
+        // khi đã khai báo thì chúng ta có thể gọi hàm 
+        var a = 10;
+        var b = 8;
+        var c = 7;
+        var d = tinhDiemTrungBinh(a,b,c);
+        document.write("<br> tính bằng function : " + d);
+        
+
+    </script>
+</body>
+</html>

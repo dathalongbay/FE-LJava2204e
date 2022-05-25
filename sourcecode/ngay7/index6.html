@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        hàm có tên 
+        - làm quen hàm vô danh ( không có tên )
+        đơn giản chỉ được sử dụng 1 lần duy nhất 
+        function(param1, param2){
+            return output;
+        }
+    </pre>
+
+    <script>
+        // chú ý nếu param không được gán giá trị mặc định khi khai báo
+        // thì khi gọi hàm bắt buộc phải truyền đối số vào nếu không sẽ // bị lỗi
+        var xinChao = function(ten = "giá trị mặc định"){
+            return "Xin chào : " + ten;
+        }
+
+        // gọi hàm vô danh được gán cho 1 biến
+        // tenBien();
+        var a = xinChao();
+        document.write("<br>" + a);
+        var b = xinChao("linh");
+        document.write("<br>" + b);
+
+        // demo param không được khai báo giá trị mặc định
+        var xinChao2 = function(ten){
+            return "Xin chào : " + ten;
+        } 
+        // gọi hàm mà không truyền đối số vào
+        var c = xinChao2();
+        document.write("<br>" + c );
+
+    </script>
+</body>
+</html>

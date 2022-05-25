@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        output bằng js 
+        1 - sử dụng document.write("") in ra màn hình
+        2 - sử dụng alert(""); in ra popup thông báo 
+        3 - sử dụng console.log(""); in ra trong phần console của trình duyệt 
+    </pre>
+
+    <h1>Khái niệm bộ chọn trong javascript</h1>
+
+    <pre>
+        trong css
+        tagName : p {}
+        id : #id {}
+        class css : .className {}
+        trong javascript
+        chọn theo id viết là : document.getElementById("id")
+        chú ý là không truyền dấu # 
+
+        muốn thay đổi nội dung html bên trong 1 thẻ theo id 
+        document.getElementById("id").innerHTML = "giá trị mới";
+        thay đổi văn bản bên trong 
+        document.getElementById("id").innerText = "giá trị mới";
+    </pre>
+
+    <div id="target1">#target1</div>
+    <div id="target2">#target2</div>
+
+    <h1>in ra chào "hà nội"</h1>
+    <h1>in ra chào 'hà nội'</h1>
+
+    <script>
+        // thay đổi html bên trong 
+        document.getElementById("target1").innerHTML = "<span>thẻ span</span> <a href='#'>thẻ a</a>";
+        // chỉ muốn thay đổi văn bản text
+        document.getElementById("target2").innerText = "<p>thẻ p</p>";
+
+        /* chú ý khi in ra chuỗi trong js */
+
+        // cách 1
+        document.write('chào "hà nội"');
+        document.write("<br>");
+        // cách 2 dùng dấu escape \ trước nháy kép bên trong 
+        document.write("chào \"hà nội\"");
+
+
+        document.write("<br>");
+        document.write("chào 'hà nội'");
+        document.write("<br>");
+        document.write('chào \'hà nội\'');
+    </script>
+    
+</body>
+</html>

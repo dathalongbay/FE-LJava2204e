@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        table,tr,td {
+            border: 1px solid red;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,7 +28,29 @@
     </pre>
 
     <script>
-        var demo = [A,B,C,D,E,F,G,H];
+        var demo = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+        var j = 1;
+        var n = '<table>';
+            n += '<thead>';
+                n += '<tr>';
+                n += '<td>' + "STT" +'</td>';
+                n += '<td>' + "Tên sinh viên" +'</td>';
+                n += '</tr>';
+            n += '</thead>';
+        while(j <= 26){
+            n += '<tbody>';
+                n += '<tr>';
+                n += '<td>' + j +'</td>';
+                n += '<td>Sinh viên ' + demo[j-1] +'</td>';
+                n += '</tr>';
+            n += '</tbody>';
+
+            j++;
+        }
+        n += '</table>';
+
+        document.write(n);
     </script>
     
 </body>

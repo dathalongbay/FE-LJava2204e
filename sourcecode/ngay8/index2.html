@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        cách 2 gắn sự kiện 
+        thay vì gắn sự kiện qua thuộc tính của thẻ html 
+        thì js gắn sự kiện qua thuộc tính trên selector ( bộ chọn ) trong js
+        thuộc tính trên selector chính là tên sự kiện
+        vd : document.getElementById('id').eventName = function() {};
+    </pre>
+
+    <button id="btn1">click me 1</button>
+    <button id="btn2">click me 2</button>
+
+    <input type="text" name="input1" id="input1">
+    <p id="inner1" style="color:red;"></p>
+
+    <script>
+        document.getElementById('btn1').onclick = function() {
+            alert('click me 1');
+        };
+
+        function demoClick() {
+            alert('click me 2');
+        }
+        // bỏ dấu () sau tên hàm với cách gọi này
+        // nên chỉ viết là demoClick mà ko phải demoClick()
+        document.getElementById('btn2').onclick = demoClick;
+
+        document.getElementById('input1').onchange = function(){
+            var value1 = document.getElementById('input1').value;
+            document.getElementById('inner1').innerHTML = value1;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        sự kiện trong js 
+        3 cách gắn sự kiện vào 1 đối tượng thẻ html nào đó
+        - cách 1 : gắn thông qua thuộc tính trong thẻ html
+    </pre>
+
+    <button onclick="alert('chào js onclick')">Click me 1</button>
+
+    <button onclick="demoClick()">Click me 2</button>
+
+    <input type="text" name="target1" id="target1" onchange="demoChangeValue()">
+
+    <p id="inner1" style="color: red;"></p>
+
+    <script>
+        function demoClick() {
+            alert('click me 2');
+        }
+
+        function demoChangeValue(){
+            // lấy value từ input 
+            var inputText = document.getElementById('target1').value;
+            document.getElementById("inner1").innerHTML = inputText;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <pre>
+        hàm thông thường và hàm vô danh 
+    </pre>
+
+    <script>
+
+        function tinhBMI(chieuCao = 1, canNang = 1) {
+            var bmi = canNang/(chieuCao*2);
+            return bmi;
+        }
+
+        var kq = tinhBMI(1.7,71);
+        document.write("kết quả bmi là : " + kq);
+
+        // hàm vô danh gắn cho 1 biến 
+        var xinChao = function(ten = 'tuan') {
+            return "<p>Xin chao " + ten + "</p>";
+        }
+
+        // gọi hàm vô danh khi gán cho biến 
+        // tenBien()
+        var x1 = xinChao();
+        // truyền đối số vào 
+        var x2 = xinChao("linh");
+        document.write(x1);
+        document.write(x2);
+    </script>
+
+</body>
+</html>

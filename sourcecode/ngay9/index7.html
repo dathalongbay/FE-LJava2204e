@@ -27,6 +27,10 @@
         Nhập vào số cột của bảng : <input type="text" name="col" id="col">
     </p>
 
+    <p>
+        <button id="taobang">Tạo bảng</button>
+    </p>
+
     <table>
     <tr>
         <th>Company</th>
@@ -44,5 +48,38 @@
         <td>Mexico</td>
     </tr>
     </table>
+
+    <div id="target"></div>
+
+    <script>
+
+        document.getElementById("taobang").onclick = function() {
+            
+            var row = document.getElementById("row").value;
+            row = parseInt(row);
+            var col = document.getElementById("col").value;
+            col = parseInt(col);
+
+            alert("hang " + row + " cột " + col);
+
+            var table = "<table>";
+                table += "<tbody>";
+                     for (var i = 1; i <= row; i++) {
+                        table += "<tr>";
+                            for(var j = 1; j <= col;j++) {
+                                table += "<td>";
+                                table += "Cột " + j + " Dòng" + i;
+                                table += "</td>";
+                            }
+                        table += "</tr>";
+                    } 
+                table += "</tbody>";
+                table += "</table>";
+
+                document.getElementById('target').innerHTML = table;
+        }
+
+        
+    </script>
 </body>
 </html>

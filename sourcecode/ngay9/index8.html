@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        for in 
+        duyệt mảng hay đối tượng 
+        không chạy từ 1 đến 100 
+    </pre>
+
+    <script>
+        // An array with some elements
+        var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+        document.write("<ul>");
+        for (var index in fruits) {
+            // index == 0 1 2 3 4
+            document.write("<li>" + fruits[index] + "</li>");
+        }
+        document.write("</ul>");
+
+        var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+
+        console.log(person);
+        document.write("<ol>");
+        for (var key in person) {
+            // tên thuộc tính == key
+            console.log(key);
+            document.write("<li>" + person[key] + "</li>");
+        }
+        document.write("</ol>");
+    </script>
+    
+</body>
+</html>

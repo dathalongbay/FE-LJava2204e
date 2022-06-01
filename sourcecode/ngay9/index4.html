@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        lệnh break; dừng vòng lặp mãi mãi 
+        lệnh continue; bỏ qua các câu lệnh bên dưới trong vòng lặp 
+        để chuyển sang lần chạy tiếp theo 
+    </pre>
+
+    <script>
+        for(var j = 1; j <= 10; j++) {
+
+            if (j == 5) {
+                break;
+            }
+
+            document.write("<p> thẻ p thứ "+j+"</p>");
+        }
+
+        for(var j = 1; j <= 10; j++) {
+
+            if (j == 5) {
+                continue;
+                // chuyển sang lần lặp tiếp theo và bỏ qua các lệnh bên dưới
+            }
+
+            document.write("<div> thẻ div thứ "+j+"</div>");
+        }
+
+    </script>
+</body>
+</html>

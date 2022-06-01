@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        sau này giới thiệu thêm từ khóa let và const 
+        bây giờ sử dụng var để tạo biến 
+        - biến toàn cục là các biến được khai báo bằng từ khóa var bên ngoài hàm  
+        - biến cục bộ bao gồm các parameter ( tham số ) của hàm và 
+        các biến được khai báo trong hàm 
+    </pre>
+
+    <script>
+        // biến toàn cục
+        var xinChao = "xin chào vy";
+
+        function tinhBMI(chieuCao = 1, canNang = 1) {
+            // chieuCao và canNang là 2 tham số parameter khi định nghĩa hàm
+            // nên 2 biến là biến cục bộ chỉ ảnh hưởng trong hàm 
+            var bmi = canNang/(chieuCao*2);
+            // biến bmi được khai báo trong hàm nên nó cũng là biến cục bộ 
+            return bmi;
+        } // ngoặc nhọn kết thúc hàm 
+        var t = tinhBMI(2,82);
+        // thử truy cập biến cục bộ bên ngoài hàm 
+
+        // thu được lỗi là : Uncaught ReferenceError: chieuCao is not defined
+        console.log(chieuCao);
+        console.log(bmi);
+    </script>
+</body>
+</html>

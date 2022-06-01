@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        sự khác nhau của while và do ... while 
+        do ... while chạy lần 1 sau đó sang lần 2 nó mới tra điều kiện của vòng lặp 
+        while kiểm tra điều chạy từ lần 1 
+    </pre>
+
+    <script>
+         // khởi tạo biến đếm
+         var j = 1000;
+        do {
+            document.write("<p> thẻ p thứ " + j + "</p>");
+            // thay đổi biến đếm
+            j++;
+        } while(j <= 10); // điều kiện của vòng lặp
+
+        var n = 1000;
+        while(n <= 10) {
+            document.write("<div> thẻ div thứ " + n + "</div>");
+            n++;
+        }
+    </script>
+</body>
+</html>

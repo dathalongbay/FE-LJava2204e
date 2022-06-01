@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        for ... of 
+        duyệt mảng và duyệt chuỗi 
+        không dùng duyệt số 1 -> 10 
+    </pre>
+
+    <script>
+        var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+        for (fruit of fruits) {
+            // fruit giá trị của các phần tử Apple -> Banana
+            document.write("<p>" + fruit + "</p>"); 
+        }
+
+        var a = "ha noi";
+        for (s of a) {
+            document.write(s + ","); 
+        }
+    </script>
+
+</body>
+</html>

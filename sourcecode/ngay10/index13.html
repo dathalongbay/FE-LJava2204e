@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre>
+        thêm thẻ html vào trong dom 
+
+    </pre>
+    <div id="main">
+        <h1 id="title">Hello World!</h1>
+        <p id="hint">This is a simple paragraph.</p>
+    </div>
+
+    <script>
+        // cú pháp tạo 1 thẻ html mới chưa có trong dom 
+        var newP = document.createElement("p");
+        console.log(newP);
+        // tạo ra text node 
+        var newContent = document.createTextNode("Nội dung của thẻ p mới");
+        console.log(newContent);
+
+        // đưa nội dung vào trong thẻ mới p 
+        newP.appendChild(newContent);
+
+        var main = document.getElementById("main"); 
+        // thêm 1 thẻ mới vào trong thẻ cũ trong dom 
+        // document.body.appendChild(theMoi, theCu);
+        document.body.appendChild(newP, main);
+
+        var newA = document.createElement("a");
+        var newContentA = document.createTextNode("Nội dung của thẻ a mới");
+        newA.appendChild(newContentA);
+        document.body.appendChild(newA, main);
+
+        newA.setAttribute("href", "www.zing.vn");
+
+    </script>
+    
+</body>
+</html>

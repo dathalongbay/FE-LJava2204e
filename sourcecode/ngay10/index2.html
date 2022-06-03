@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+      từ khóa this bên trong object đại diện cho chính đối tượng đó 
+      và từ khóa this thường được viết trong phương thức của object 
+    </pre>
+
+    <script>
+
+        // khai báo 1 object rỗng
+        var person = {};
+        // khai báo các thuộc tính của 1 object 
+        person.name = "linh chi";
+        person.age = 21;
+        person.gender = "nữ";
+        // khai báo phương thức cho object 
+        person.displayName = function() {
+            // từ khóa this trong method thì đại diện cho chính object đó
+            console.log(this.name);
+            console.log(this.age);
+            console.log(this.gender);
+        }
+
+        console.log(person);
+
+        document.write("<ul>");
+        document.write("<li>"+person.name+"</li>");
+        document.write("<li>"+person.age+"</li>");
+        document.write("<li>"+person.gender+"</li>");
+        document.write("</ul>");
+
+        person.displayName();
+
+
+    </script>
+</body>
+</html>

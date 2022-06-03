@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .highlight {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        thay đôi class css hoặc thêm class css vào 1 thẻ html 
+    </pre>
+    <div id="info" class="disabled">Something very important!</div>
+
+    <script>
+        // Selecting element
+        var elem = document.getElementById("info");
+        console.log(elem);
+
+        // thay thế class css 
+        elem.className = "abc";
+
+        // thêm class css 
+        elem.className = elem.className + " highlight";
+        // elem.className += " highlight";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Selecting Elements with CSS Selectors
+        chọn thẻ html theo css selector
+
+        document.querySelectorAll("ul li");
+        chọn các thẻ li bên trong các thẻ ul 
+
+        document.querySelectorAll("ul li.tick");
+        chọn tất cả các thẻ li có class là tick bên trong thẻ ul 
+    </pre>
+
+    <ul>
+        <li>thẻ li 1</li>
+        <li>thẻ li 2</li>
+        <li>thẻ li 3</li>
+        <li class="tick">thẻ li 4</li>
+        <li class="tick">thẻ li 5</li>
+    </ul>
+
+    <script>
+        // trả về NodeList có 5 phần tử
+        var demo1 = document.querySelectorAll("ul li");
+        console.log(demo1);
+        demo1[0].style.color = "red";
+        demo1[1].style.color = "blue";
+        demo1[2].style.color = "green";
+
+
+        // trả về NodeList có 2 phần tử
+        var demo2 = document.querySelectorAll("ul li.tick");
+        console.log(demo2);
+        demo2[0].style.color = "orange";
+
+        // ưu điểm là linh hoạt theo css selector
+
+
+
+    </script>
+
+
+</body>
+</html>

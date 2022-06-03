@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        js object 
+        đối tượng trong js 
+        var person = {
+            name: "Peter",
+            age: 28,
+            gender: "Male",
+            displayName: function() {
+                alert(this.name);
+            }
+        };
+
+        // cú pháp truy cập hay gán lại giá trị cho thuộc tính 
+        objectName.propertyName 
+        objectName['propertyName']
+        // cú pháp truy vào phương thức trong object 
+        objectName.methodName()
+    </pre>
+
+    <script>
+
+        // khai báo 1 object rỗng
+        var person = {};
+        // khai báo các thuộc tính của 1 object 
+        person.name = "linh chi";
+        person.age = 21;
+        person.gender = "nữ";
+        // khai báo phương thức cho object 
+        person.displayName = function() {
+            alert("xin chào");
+        }
+
+        console.log(person);
+
+        document.write("<ul>");
+        document.write("<li>"+person.name+"</li>");
+        document.write("<li>"+person.age+"</li>");
+        document.write("<li>"+person.gender+"</li>");
+        document.write("</ul>");
+
+        person.displayName();
+
+
+    </script>
+</body>
+</html>

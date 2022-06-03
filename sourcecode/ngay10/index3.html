@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        DOM : Document Object Model
+        select theo class name
+    </pre>
+
+    <div class="classA">classA</div>
+    <div class="classA">classA</div>
+
+    <div class="classB">classB</div>
+    <div class="classB">classB</div>
+
+    <script>
+        // trả về HTMLCollection(2) 
+        var demoA = document.getElementsByClassName("classA");
+        console.log(demoA);
+
+        // truy cập vào để thay đổi style css ( selector.style.cssProperty )
+        demoA[0].style.color = "orange";
+        // chú ý với thuộc tính nhiều hơn 2 chữ thì bỏ đi dấu - ở giữa và viết hoa ký tự đầu của chữ thứ 2 
+        // vd background-color -> selector.style.backgroundColor
+        // margin-top -> selector.style.marginTop
+        demoA[0].style.backgroundColor = "green";
+
+        demoA[1].style.color = "red";
+        demoA[1].style.backgroundColor = "orange";
+
+        // thử viết cách không gán vào biến khi dùng getElementsByClassName
+        document.getElementsByClassName("classB")[0].style.backgroundColor = "green";
+        document.getElementsByClassName("classB")[0].style.color = "red";
+
+
+    </script>
+</body>
+</html>

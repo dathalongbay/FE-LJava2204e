@@ -11,8 +11,35 @@
     <div>
         <label for="">Năm sinh</label>
         <input type="datetime-local" name="nam_sinh" id="nam_sinh">
-        <button>Tính tuổi theo định dạng (năm tháng ngày ) vd 21 năm 6 tháng 11 ngày</button>
+        <button id="tinh">Tính tuổi theo định dạng (năm tháng ngày ) vd 21 năm 6 tháng 11 ngày</button>
     </div>
+
+    <script>
+        document.getElementById("tinh").onclick = function() {
+
+    
+
+            var namSinh = document.getElementById("nam_sinh").value;
+            console.log(namSinh);
+            if (namSinh) {
+                var nam = namSinh.slice(0, 10);
+                console.log(nam);
+                var getTimeInput = nam.split("-");
+                console.log(getTimeInput);
+
+                var d1 = new Date(getTimeInput[0],getTimeInput[1]-1,getTimeInput[2],0,0,0,0);
+                var d2 = new Date();
+                var d3 = d2.getTime() - d1.getTime();
+                console.log(d3);
+                var y = Math.round(d3/(86400000*365));
+                var m = Math.round(d3/(86400000*30)) - (y * 12);
+                var d = Math.round(d3/86400000) - ((365*y) + (30*m));
+                var d4 = y  +  ' năm ' + m + ' tháng ' + d + 'ngày ';
+                alert(d4);
+            }
+            
+        }
+    </script>
     
 </body>
 </html>

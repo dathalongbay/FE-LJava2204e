@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        try {
+            var greet = "Hi, there!";
+            document.write(greet);
+            
+            // Trying to access a non-existent variable
+            document.write(welcome);
+        
+            // If error occurred following line won't execute
+            alert("All statements are executed successfully.");
+        } catch(error) {
+            // Handle the error
+            console.log("Thông báo lỗi 123 : " + error.message);
+            // tracking error 
+            // gửi post api theo dõi lỗi 
+        }
+    
+    // Continue execution
+    document.write("<p>Hello World!</p>");
+    </script>
+</body>
+</html>

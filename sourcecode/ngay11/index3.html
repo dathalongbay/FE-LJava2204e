@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        các phương thức của object Date
+    </pre>
+
+    <script>
+        var d = new Date();
+        // Extracting time part 
+document.write("<br> getHours " + d.getHours()); // Display the number of hours into the day (0-23)
+document.write("<br> getMinutes " + d.getMinutes()); // Display the number of minutes into the hour (0-59)
+document.write("<br> getSeconds " + d.getSeconds()); // Display the seconds into the minute (0-59)
+document.write("<br> getMilliseconds " + d.getMilliseconds()); // Display the number of milliseconds into second (0-999)
+document.write("<br> getTime " + d.getTime()); // Display the number of milliseconds since 1/1/1970
+document.write("<br> getTimezoneOffset " + d.getTimezoneOffset()); // Display the time-zone offset (from Greenwich Mean Time) in minutes
+
+document.write("<br> getFullYear " + d.getFullYear()); // lấy năm
+document.write("<br> getMonth " + d.getMonth()); // lấy tháng
+document.write("<br> getDay " + d.getDay()); // lấy thứ
+document.write("<br> getDate : " + d.getDate()); // lấy thứ
+    </script>
+</body>
+</html>

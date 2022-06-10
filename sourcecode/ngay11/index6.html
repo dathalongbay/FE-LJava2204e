@@ -17,8 +17,6 @@
     <script>
         document.getElementById("tinh").onclick = function() {
 
-    
-
             var namSinh = document.getElementById("nam_sinh").value;
             console.log(namSinh);
             if (namSinh) {
@@ -31,9 +29,9 @@
                 var d2 = new Date();
                 var d3 = d2.getTime() - d1.getTime();
                 console.log(d3);
-                var y = Math.round(d3/(86400000*365));
-                var m = Math.round(d3/(86400000*30)) - (y * 12);
-                var d = Math.round(d3/86400000) - ((365*y) + (30*m));
+                var y = Math.floor(d3/(86400000*365));
+                var m = Math.floor(d3/(86400000*30)) - (y * 12);
+                var d = Math.floor(d3/86400000) - ((365*y) + (30*m));
                 var d4 = y  +  ' năm ' + m + ' tháng ' + d + 'ngày ';
                 alert(d4);
             }

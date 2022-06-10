@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        chú ý về 2 loại thời gian trong js 
+        - loại 1 timestamp ( tính toán ) tính mili giây từ 1.1.1970 đến now 
+        - loại 2 human date ( người đọc được) chỉ có ý nghĩa hiển thị ko tính toán được  
+    </pre>
+    <script>
+        // chuyển 1 thời gian human date thành timestamp
+        var d = new Date(2010,10,20,12,12,0);
+        var d2 = d.getTime();
+        document.write("<br>d : " + d);
+        document.write("<br>d2 : " + d2);
+
+        //  chuyển ngược lại từ thời gian timestamp thành human date 
+        // có thể truyền mili giấy timestamp vào trong new Date()
+        var d3 = new Date(d2);
+        document.write("<br>d3 : " + d3);
+
+        // các method xem các format thời gian 
+        document.write(d.toDateString() + " toDateString <br>  "); // Display an abbreviated date string
+        document.write(d.toLocaleDateString() + " toLocaleDateString <br>  "); // Display a localized date string
+        document.write(d.toISOString() + "toISOString <br>  "); // Display the ISO standardized date string
+        document.write(d.toUTCString() + " toUTCString <br>  "); // Display a date string converted to UTC time
+        document.write(d.toString() + " toString "); // Display the full date string with local time zone
+    </script>
+</body>
+</html>

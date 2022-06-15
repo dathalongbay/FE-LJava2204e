@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function setCookie(name, value, daysToLive) {
+            // Encode value in order to escape semicolons, commas, and whitespace
+            var cookie = name + "=" + encodeURIComponent(value);
+            
+            if(typeof daysToLive === "number") {
+                /* Sets the max-age attribute so that the cookie expires
+                after the specified number of days */
+                cookie += "; max-age=" + (daysToLive*24*60*60);
+                
+                document.cookie = cookie;
+            }
+        }
+
+        setCookie("keyword", "abc", 1);
+        setCookie("ten", "ha noi", 2);
+
+        console.log("view cookie");
+        console.log(document.cookie);
+
+        function getCookie(name) {
+            // Split cookie string and get all individual name=value pairs in an array
+            var cookieArr = document.cookie.split(";");
+
+            console.log(cookieArr);
+            
+            // Loop through the array elements
+            for(var i = 0; i < cookieArr.length; i++) {
+                var cookiePair = cookieArr[i].split("=");
+                console.log(cookiePair);
+                /* Removing whitespace at the beginning of the cookie name
+                and compare it with the given string */
+                if(name == cookiePair[0].trim()) {
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            
+            // Return null if not found
+            return null;
+        }
+
+        var ten = getCookie("ten");
+        console.log("get cookie");
+        console.log(ten);
+    </script>
+</body>
+</html>

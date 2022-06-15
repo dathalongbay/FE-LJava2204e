@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        regular expression : biểu thức chính qui 
+        https://www.tutorialrepublic.com/javascript-tutorial/javascript-regular-expressions.php
+
+        var regex = /^Mr\./;
+
+        nhập chuỗi Mrabc => true thỏa mãn 
+        nhập chuỗi Arf => false ko thỏa mãn 
+
+        biểu thức chính qui trong js cú pháp : /biểu thức chính qui/
+        ở ví dụ trên nội dung của Regex là ^Mr\.
+
+        .	Matches any single character except newline \n.
+        dấu . trong regex đại diện cho 1 ký tự đơn ngoại trừ ký tự dòng mới \n
+         . có thể là bất cứ 1 ký tự nào 
+
+         ^p	Matches the letter p at the beginning of a line.
+         dấu ^ có nghĩa là bắt đầu bằng 1 chuỗi nào đó 
+         ví dụ ^p có nghĩa chuỗi đó bắt đầu bằng p 
+         p$	Matches the letter p at the end of a line.
+         dấu $ đại diện cho chuỗi kết thúc 
+
+         ví dụ : /^abc def$/
+
+         phân biệt . với lại cú pháp . trong regex khác nhau 
+         phân biệt thêm escape vào trước . 
+
+
+         ví dụ :
+         input nhập họ tên với rule phải có 3 từ 
+         họ => tên đệm => tên 
+         họ không bắt đầu bằng 1 ký tự đặt biệt hay 1 số mà là chuỗi 
+         tên đệm tương tự như qui tắc họ 
+         tên cũng tương tự 
+    
+
+    </pre>
+
+    <label for="">Họ tên</label>
+    <input type="text" id="hoten" name="hoten" value="">
+
+    <script>
+        var hoten = document.getElementById("hoten").value;
+        var regexHoten = /^[a-z]{2,6} [a-z]{2,6} [a-z]{2,6}$/;
+        if(regexHoten.test(hoten)){
+            console.log("họ tên hợp lệ");
+        } else {
+            alert("vui lòng nhập lại họ tên theo đúng qui tắc");
+        }
+    </script>
+
+
+</body>
+</html>

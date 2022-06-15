@@ -48,14 +48,20 @@
     <label for="">Họ tên</label>
     <input type="text" id="hoten" name="hoten" value="">
 
+    <button id="validate">Kiem tra</button>
+
     <script>
-        var hoten = document.getElementById("hoten").value;
-        var regexHoten = /^[a-z]{2,6} [a-z]{2,6} [a-z]{2,6}$/;
-        if(regexHoten.test(hoten)){
-            console.log("họ tên hợp lệ");
-        } else {
-            alert("vui lòng nhập lại họ tên theo đúng qui tắc");
+        document.getElementById("validate").onclick = function() {
+            var hoten = document.getElementById("hoten").value;
+            var regexHoten = /^[a-z]{2,6} [a-z]{2,6} [a-z]{2,6}$/;
+            if(regexHoten.test(hoten)){
+                alert("họ tên hợp lệ");
+            } else {
+                alert("vui lòng nhập lại họ tên theo đúng qui tắc");
+            }
         }
+
+        
     </script>
 
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <pre>
+        trang chủ jquery : https://jquery.com/
+        hướng dẫn : https://www.w3schools.com/jquery/default.asp
+        jquery là thư viện của js cho phép chúng ta viết js đơn giản hơn 
+        js thuần 
+        cũng giống như nhúng 1 file js vào trong trang html thì jquery cũng vậy
+
+        ** chú ý là khi viết code jquery phải đảm bảo thư viện jquery đã được nhúng vào trang html 
+
+        - bộ chọn selector trong jquery 
+        chọn theo id : document.getElementById()
+        chọn = jquery : $("#id")
+        tương tự với class thì js : document.getElementsByClassName()
+        chọn class = jquery : $(".className")
+        có thể truyền trực tiếp css selector vào trong $("css selector")
+        vd $(".container .abc")
+
+        - chú ý với code jquery nên đặt trong document ready 
+        có nghĩa là khi trang load xong dom html thì mới thực thi đoạn code jquery bên trong 
+        $(document).ready();
+        trong () của ready truyền vào 1 function vô danh 
+        function() {}
+
+        ví dụ là muốn chọn hình ảnh trong html nhưng hình ảnh chưa được load xong 
+        code js đã chạy do đó nên viết trong document ready 
+    </pre>
+
+    <div id="demo1">Nội dung #demo1</div>
+
+    <script>
+        $(document).ready(function() {
+            // code js trong đây để đảm bảo dom html đã được load xong 
+            $("#demo1").css({"width":"200px","height":"200px", "background-color": "green"});
+        });
+    </script>
+</body>
+</html>

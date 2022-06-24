@@ -9,7 +9,41 @@
     width: 1440px;
     height: auto;
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 .about-section .about-title {
     font-family:var(--main-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin: 100px 0 165px 165px;
+}
+.about-section .about-right {
+    margin: 100px 165px 83px 340px;
+}
+.about-section .about-right p {
+    font-family:var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.about-section .about-right a.learn-more-btn {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family:var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 20px;
+}
+
+.about-section .about-right a.learn-more-btn:hover {
+    text-decoration: underline;
 }

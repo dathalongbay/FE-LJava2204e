@@ -1,0 +1,15 @@
+:root {
+    --main-color: #B83B5E;
+    --main-font: 'Mulish', sans-serif;
+}
+
+/* https://www.w3schools.com/css/css3_variables.asp */
+.about-section {
+    background-color: var(--main-color);
+    width: 1440px;
+    height: auto;
+    max-width: 100%;
+}
+.about-section .about-title {
+    font-family:var(--main-font);
+}
